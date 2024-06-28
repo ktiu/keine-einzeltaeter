@@ -1,0 +1,42 @@
+---
+---
+
+<div id="homeButton">
+  <a href="#">↑</a>
+</div>
+
+<style>
+  #homeButton {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    opacity: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    transition: opacity 0.2s;
+  }
+  #homeButton a {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none !important;
+    text-align: center;
+  }
+</style>
+
+<script>
+  const visible = () => {
+    const home = document.getElementById("homeButton")
+    var top = document.body.scrollTop + document.documentElement.scrollTop < 100
+    home.style.opacity = top ? '0' : '1'
+  }
+  window.onscroll = visible
+  visible()
+</script>
