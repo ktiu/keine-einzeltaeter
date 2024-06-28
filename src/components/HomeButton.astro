@@ -33,7 +33,7 @@
 
 <script>
   const visible = () => {
-    const home = document.getElementById("homeButton")
+    const home = document.getElementById("homeButton")!
     var top = document.body.scrollTop + document.documentElement.scrollTop < 100
     home.style.opacity = top ? '0' : '1'
   }
