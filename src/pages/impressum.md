@@ -5,7 +5,15 @@ title: Impressum
 
 [Zurück](/)
 
+
 # Impressum
+
+## Kontakt
+
+Kein Schlussstrich Hessen  
+E-Mail: <kein_schlussstrich_hessen@systemli.org>
+
+<!--
 
 ## Angaben gemäß § 5 TMG
 
@@ -30,6 +38,8 @@ Philipp Hammer
 turn the corner e.V.  
 Leipziger Straße 91  
 60487 Frankfurt am Main
+
+-->
 
 ## Verbraucherstreitbeilegung/Universalschlichtungsstelle
 
@@ -81,6 +91,8 @@ New Mallow Road
 Cork T23AT2P  
 Ireland
 
+<!--
+
 ## Verantwortliche Stelle
 
 Verantwortlich für die Datenverarbeitung auf dieser Seite ist:
@@ -89,3 +101,5 @@ Philipp Hammer
 turn the corner e.V.  
 Leipziger Straße 91  
 60487 Frankfurt am Main
+
+-->

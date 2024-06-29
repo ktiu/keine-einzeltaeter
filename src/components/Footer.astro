@@ -8,14 +8,16 @@
     <img alt="ada_kantine" src="/img/ada.png">
     <img alt="Stiftung Citoyen" src="/img/citoyen.png">
   </div>
-  <p class="links">
+  <div class="links">
+    <a href="mailto:kein_schlussstrich_hessen@systemli.org">E-Mail</a>
+    <a href="https://www.instagram.com/kein_schlussstr_hessen/">Instagram</a>
     <a href="/impressum">Impressum und Datenschutz</a>
-  </p>
+  </div>
 </footer>
 
 <style>
   footer {
-    margin: 7rem 0 5rem 0;
+    margin: 5rem 0 3rem 0;
   }
   .logos {
     margin-bottom: 4rem;
@@ -31,6 +33,12 @@
     object-fit: contain;
   }
   .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .links a {
     text-align: center;
   }
 </style>
