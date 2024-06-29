@@ -28,7 +28,7 @@
 <script>
   const visible = () => {
     const home = document.getElementById("homeButton")!
-    var top = document.body.scrollTop + document.documentElement.scrollTop < 100
+    var top = document.body.scrollTop + document.documentElement.scrollTop < 150
     home.style.opacity = top ? '0' : '1'
   }
   window.onscroll = visible
