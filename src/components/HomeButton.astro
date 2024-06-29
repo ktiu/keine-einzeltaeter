@@ -2,32 +2,24 @@
 ---
 
 <div id="homeButton">
-  <a href="#">↑</a>
+  <a href="#"><img src="home.svg" alt="Nach oben"/></a>
 </div>
 
 <style>
   #homeButton {
     position: fixed;
     top: 1rem;
-    left: 1rem;
+    right: 1rem;
     opacity: 0;
     width: 3rem;
     height: 3rem;
     background-color: var(--accent);
     border-radius: 50%;
-    display: flex;
-    justify-content: stretch;
-    align-items: center;
     transition: opacity 0.2s;
   }
-  #homeButton a {
-    display: block;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none !important;
-    text-align: center;
+  #homeButton img {
+    width: 3rem;
+    height: 3rem;
   }
 </style>
 
