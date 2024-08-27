@@ -1,0 +1,228 @@
+---
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="description" content="Astro description" /> -->
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+  <main>
+    <section id="halle">
+      <div class="frame"></div>
+      <div class="cut">
+      <p class="large pre-title">Filmvorführung und Gespräch</p>
+      <h1><span class="ul">Einzeltäter –<br/>Halle (Teil 2)</span></h1>
+      <ul class="large details">
+        <li>8. Oktober 2024, 18h30</li>
+        <li>im FilmForum Höchst</li>
+        <li>Eintritt auf Spendenbasis</li>
+      </ul>
+      <ul class="meta">
+        <li>Dokumentarfilm, D 2023</li>
+        <li>67 Minuten</li>
+        <li>auf deutsch mit deutschen Untertiteln</li>
+        <li>Buch und Regie: Julian Vogel</li>
+      </ul>
+      <p><strong>Nach dem Film findet ein Gespräch mit dem Regisseur Julian Vogel statt.</strong></p>
+      <p>
+        An Jom Kippur, dem höchsten jüdischen Feiertag, versucht ein Rechtsextremist in die Synagoge von Halle einzudringen, um ein Blutbad anzurichten. Als ihm dies nicht gelingt, ermordet er zwei Menschen außerhalb der Synagoge. Einer davon ist Kevin. Während dem Täter 2020 der Prozess gemacht wird, versucht Kevins Vater Karsten seine Trauer zu bewältigen. Er findet Halt in der Fanszene des Halleschen FC, einem ostdeutschen Traditionsverein, der auch Kevins Heimat war. 
+      </p>
+      <footer>
+        <div class="logos">
+          <img alt="Kein Schlussstrich Hessen" style="margin: -0.2rem -0.45rem;" src="/img/kein_schlussstrich_hessen.png">
+          <img alt="Filmforum Höchst" src="/img/filmforum_hoechst.jpg">
+          <img alt="Stiftung Citoyen" src="/img/citoyen.png">
+        </div>
+      </footer>
+      </div>
+    </section>
+    <section>
+      <div class="frame"></div>
+      <div class="cut">
+      <p class="large pre-title">Filmreihe</p>
+      <h1><span class="ul">Keine Einzeltäter</span></h1>
+      <p class="large">
+      11. Juli 2024<br/><strong>Einzeltäter – München (Teil 1)</strong><br/><em>ada_kantine</em>
+      </p>
+      <p class="large right">
+      8. Oktober 2024<br/><strong>Einzeltäter – Halle (Teil 2)</strong><br/><em>siehe Rückseite</em>
+      </p>
+      <p class="large">
+      8. November 2024<br/><strong>Spuren – Die Opfer des NSU</strong><br/><em>Kinopolis Hanau</em>
+      </p>
+      <p class="large right">
+      19. Januar 2025<br/><strong>Einzeltäter – Hanau (Teil 3)</strong><br/><em>Infos zu Ort und Uhrzeit folgen</em>
+      </p>
+      </ul>
+      <footer>
+        <div class="logos">
+          <img alt="Kein Schlussstrich Hessen" style="margin: -0.2rem -0.45rem;" src="/img/kein_schlussstrich_hessen.png">
+          <p style="align-self: end">Aktuelle Infos auf <br /><span class="ul">https://keine-einzeltaeter.de</span><br />Instagram: <span class="ul">@kein_schlussstr_hessen</span></p>
+        </div>
+      </footer>
+      </div>
+    </section>
+  </body>
+</html>
+
+<style>
+  .right {
+    text-align: right;
+  }
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 2rem;
+    justify-content: space-between;
+  }
+  .logos img {
+    max-height: 7rem;
+    max-width: 11rem;
+    object-fit: contain;
+  }
+  .large {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+  .large strong {
+    font-weight: 800;
+  }
+  .details, .toc {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+  }
+  p {
+    margin: 0;
+  }
+  .meta {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 1.5;
+    display: grid;
+    gap: 0 1rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  @page {
+    height: 216mm;
+    width: 154mm;
+  }
+  section {
+    box-sizing: border-box;
+    height: 216mm;
+    width: 154mm;
+    margin: 0;
+    padding: 3mm;
+    display: flex;
+    position: relative;
+  }
+  .frame {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    height: 216mm;
+    width: 154mm;
+    box-sizing: border-box;
+    border: 7mm solid var(--accent);
+  }
+  div.cut {
+    width: 100%;
+    margin: 0;
+    padding: 12mm;
+    border: 1px dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.2;
+    margin-bottom: 0.2em;
+  }
+  span.ul {
+    background-image: linear-gradient(to bottom, #429792, #429792);
+    background-position: 0 1.09em;
+    background-repeat: repeat-x;
+    background-size: 1px 0.15em;
+  }
+  :root {
+    --accent: #429792;
+  }
+  html {
+    font-family: "Outfit", system-ui, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    max-width: 800px;
+    margin: 0;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust:exact !important;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:visited {
+    color: var(--accent);
+  }
+  p {
+    hyphens: auto;
+  }
+  .pre-title {
+    margin-top: 0;
+  }
+  /* outfit-300 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/outfit-v11-latin_latin-ext-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/outfit-v11-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-700 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/outfit-v11-latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* outfit-800 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/outfit-v11-latin_latin-ext-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+</style>
