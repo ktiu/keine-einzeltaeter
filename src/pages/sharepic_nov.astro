@@ -15,57 +15,18 @@
     <section id="halle">
       <div class="frame"></div>
       <div class="cut">
-      <p class="large pre-title">Filmvorführung und Gespräch</p>
-      <h1><span class="ul">Einzeltäter –<br/>Halle (Teil 2)</span></h1>
+        <p class="large pre-title">Filmvorführung und Gespräch<br/>mit Regisseurin Aysun Bademsoy</p>
+      <h1><span class="ul">Spuren – Die Opfer des NSU</span></h1>
       <ul class="large details">
-        <li>8. Oktober 2024, 18h30</li>
-        <li>im FilmForum Höchst</li>
-        <li>Eintritt auf Spendenbasis</li>
+        <li>8. November 2024, 18h (Einlass 17h30)</li>
+        <li>Kinopolis Hanau</li>
+        <li>Eintritt frei</li>
       </ul>
-      <ul class="meta">
-        <li>Dokumentarfilm, D 2023</li>
-        <li>67 Minuten</li>
-        <li>auf Deutsch mit deutschen Untertiteln</li>
-        <li>Buch und Regie: Julian Vogel</li>
-      </ul>
-      <p><strong>Nach dem Film findet ein Gespräch mit dem Regisseur Julian Vogel statt.</strong></p>
-      <p>
-        An Jom Kippur, dem höchsten jüdischen Feiertag, versucht ein Rechtsextremist in die Synagoge von Halle einzudringen, um ein Blutbad anzurichten. Als ihm dies nicht gelingt, ermordet er zwei Menschen außerhalb der Synagoge. Einer davon ist Kevin. Während dem Täter 2020 der Prozess gemacht wird, versucht Kevins Vater Karsten seine Trauer zu bewältigen. Er findet Halt in der Fanszene des Halleschen FC, einem ostdeutschen Traditionsverein, der auch Kevins Heimat war. 
-      </p>
-      <p>
-        Adresse: Emmerich-Josef-Straße 46a, Ffm-Höchst
-      </p>
       <footer>
         <div class="logos">
           <img alt="Kein Schlussstrich Hessen" style="margin: -0.2rem -0.45rem;" src="/img/kein_schlussstrich_hessen.png">
-          <img alt="Filmforum Höchst" src="/img/filmforum_hoechst.jpg">
           <img alt="Stiftung Citoyen" src="/img/citoyen.png">
-        </div>
-      </footer>
-      </div>
-    </section>
-    <section>
-      <div class="frame"></div>
-      <div class="cut">
-      <p class="large pre-title">Filmreihe</p>
-      <h1><span class="ul">Keine Einzeltäter</span></h1>
-      <p class="large">
-      11. Juli 2024<br/><strong>Einzeltäter – München (Teil 1)</strong><br/><em>ada_kantine</em>
-      </p>
-      <p class="large right">
-      8. Oktober 2024<br/><strong>Einzeltäter – Halle (Teil 2)</strong><br/><em>siehe Rückseite</em>
-      </p>
-      <p class="large">
-      8. November 2024<br/><strong>Spuren – Die Opfer des NSU</strong><br/><em>Kinopolis Hanau</em>
-      </p>
-      <p class="large right">
-      19. Januar 2025<br/><strong>Einzeltäter – Hanau (Teil 3)</strong><br/><em>Infos zu Ort und Uhrzeit folgen</em>
-      </p>
-      </ul>
-      <footer>
-        <div class="logos">
-          <img alt="Kein Schlussstrich Hessen" style="margin: -0.2rem -0.45rem;" src="/img/kein_schlussstrich_hessen.png">
-          <p style="align-self: end">Aktuelle Infos auf <br /><span class="ul">https://keine-einzeltaeter.de</span><br />Instagram: <span class="ul">@kein_schlussstr_hessen</span></p>
+          <img alt="Kunst der Gegenuntersuchung" src="/img/kdgu.png">
         </div>
       </footer>
       </div>
@@ -78,14 +39,15 @@
     text-align: right;
   }
   .logos {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     gap: 4rem 2rem;
     justify-content: space-between;
   }
   .logos img {
+    flex-shrink: 1;
     max-height: 7rem;
-    max-width: 11rem;
+    max-width: 12rem;
     object-fit: contain;
   }
   .large {
@@ -115,13 +77,13 @@
     grid-template-columns: 1fr 1fr;
   }
   @page {
+    height: 437pt;
     width: 437pt;
-    height: 613pt;
   }
   section {
     box-sizing: border-box;
+    height: 437pt;
     width: 437pt;
-    height: 613pt;
     margin: 0;
     padding: 3mm;
     display: flex;
@@ -132,16 +94,15 @@
     z-index: -10;
     top: 0;
     left: 0;
+    height: 437pt;
     width: 437pt;
-    height: 613pt;
     box-sizing: border-box;
-    border: 7mm solid var(--accent);
+    border: 4mm solid var(--accent);
   }
   div.cut {
     width: 100%;
     margin: 0;
-    padding: 12mm;
-    /* border: 1px dashed; */
+    padding: 9mm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -163,9 +124,10 @@
     --accent: #429792;
   }
   html {
+    background-color: white;
     font-family: "Outfit", system-ui, sans-serif;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
     margin: 0;
     box-sizing: border-box;
